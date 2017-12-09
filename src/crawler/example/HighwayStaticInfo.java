@@ -13,7 +13,7 @@ public class HighwayStaticInfo {
 	public static void main(String[] args) {
 		
 		// 遠端資料路徑
-		String uri = "gz:http://tisvcloud.freeway.gov.tw/cms_value.xml.gz";
+		String uri = "gz:http://tisvcloud.freeway.gov.tw/history/TDCS/M07A/M07A_20171106.tar.gz";
 
 		System.out.println(
 				CrawlerPack.start()
