@@ -16,11 +16,11 @@ public class FBElasticImport {
     static String elasticIndexType = "data";
     static String pageName = "PittiImmagineUomo";
     // 2017-09-02
-    static long start = 1483200000;
+    static long start = 1496246400;
     // 往前抓抓取日期數
-    static int days = 10;
+    static int days =30;
     // 每日抓取文章上限 (上限1000)
-    static int maxPosts = 30;
+    static int maxPosts = 100;
     static String access_token = "EAACEdEose0cBAMDQjRLLfGa0NxFWkXeAT1MjcQUqp0ZCRZCRLFu2OJTAQ6yRCaO3ZCoGU6pV8W9XxMXWrmtcjRDUXxlC8Y8AlkongkSQI9KV34ucwctixvMDusw8jewPZCFSWncMv5eISlCr3ay1ZCTkrSNlUPOrmLuBZCDVUnZCvefpohRYs09qO89bRYErSbaKo7eFDv9wwZDZD";
 
     public static void main(String[] args) {
