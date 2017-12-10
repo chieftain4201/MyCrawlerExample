@@ -24,9 +24,9 @@ public class FacebookExam {
 		// 遠端資料路徑
 
 		String uri = 
-				"https://graph.facebook.com/v2.6"
-				+ "/search?q="
-				+ "&access_token=";
+				"https://graph.facebook.com/v2.11"
+				+ "/PittiImmagineUomo/posts?fields=id,link,message,created_time,likes.limit(0).summary(total_count),reactions.limit(0).summary(total_count)"
+				+ "&access_token=EAACEdEose0cBAMDQjRLLfGa0NxFWkXeAT1MjcQUqp0ZCRZCRLFu2OJTAQ6yRCaO3ZCoGU6pV8W9XxMXWrmtcjRDUXxlC8Y8AlkongkSQI9KV34ucwctixvMDusw8jewPZCFSWncMv5eISlCr3ay1ZCTkrSNlUPOrmLuBZCDVUnZCvefpohRYs09qO89bRYErSbaKo7eFDv9wwZDZD";
 
 
 		Elements elems =
@@ -41,7 +41,8 @@ public class FacebookExam {
 			String id = data.select("id").text();
 
 			// FIXIT
-			String reactions = "";
+			//String reactions = "";
+			String reactions = data.select("summary total_count").text();
 
 
 			output += id + "," + reactions + "\n";
