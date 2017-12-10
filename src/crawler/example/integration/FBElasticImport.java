@@ -28,7 +28,7 @@ public class FBElasticImport {
         for (long datatime = start ; datatime > start-86400*days ;datatime-=86400) {
             String uri =
                     "https://graph.facebook.com/v2.6"
-                            + "/"+pageName+"/posts?fields=message,comments.limit(0).summary(true),likes.limit(0).summary(true),created_time&since="+(datatime-3600*8)+"&until="+datatime+"&limit="+maxPosts
+                            + "/"+pageName+"/posts?fields=message,comments.limit(0).summary(true),likes.limit(0).summary(true),created_time&since="+(datatime-3600*24)+"&until="+datatime+"&limit="+maxPosts
                             + "&access_token="+access_token;
 
 
